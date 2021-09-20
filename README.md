@@ -4,4 +4,4 @@ Esta é uma aplicação para visualizar os filmes mais populares atualmente e pe
 
 ## Ferramentas
 
-As ferramentas utilizadas no frontend foram o HTML, CSS e Javascript. E para o backend foram utilizadas Node.js, Knex.js e o banco de dados MySQL.
+As ferramentas utilizadas no frontend foram o HTML, CSS e Javascript. E para o backend foram utilizados o Node.js, Express.js, Knex.js e o banco de dados MySQL.
