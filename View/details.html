@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <header id="header-top">
+        <h1>The Cappacita Movie Database</h1>
+        <nav id="nav-top">
+            <form id="search-form">
+                <input type="text" id="search" placeholder="Search"class="search"/>
+            </form>
+        </nav>
+        
+    </header>
+    <section class="movies-section">
+        <div>
+            <h2 id="theme-title">Movie Details</h2>
+        </div>
+        <main id="main">
+            
+        </main>
+    </section>
+    
+    <section class="commentary-section">
+        <div>
+            <h2 id="commentary-title">Comments</h2>
+        </div>
+        <div id="commentary-form">
+            <h3>Leave a Comment!</h3>
+            <div>
+                <label for="user_name">Name:</label>
+                <input type="text" id="user_name" name="user_name" />
+            </div>
+            <div>
+                <label for="user_rate">Rate:</label>
+                <input type="number" id="user_rate" name="user_rate" min="0" max="10" step="0.1"/>
+            </div>
+            <div>
+                <label for="commentary">Comment:</label>
+                <textarea id="commentary" name="user_commentary"></textarea>
+            </div>
+        
+            <div id="commentary-button">
+                <button type="submit">Send</button>
+            </div>
+        </div>
+        <div>
+            <h3>Read the Comments!</h3>
+            <div id="show-commentary"></div>
+            <div id="show-commentary-button">
+                <button type="submit">Show Comments</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-bottom">
+        <figure>
+            <img class="logo" src="./assets/cappacita.png" alt="Cappacita Logo">
+            <figcaption>CappacitaDev</figcaption>
+        </figure>
+    </footer>
+
+    <script src="script-details.js"></script>
+</body>
+</html>

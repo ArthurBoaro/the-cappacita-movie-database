@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+
+body {
+    background-color: #00076b;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #20dbdbad;
+    display: block;
+    padding: 1rem;
+    border-radius: 0px 0px 12px 12px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+}
+
+#header-top {
+    font-size: 25px;
+    padding: 20px;
+    text-align: left;
+    color: #00076b;
+}
+
+
+#nav-top {
+    text-align: right;
+    justify-content: right;
+}
+
+.search {
+    background-color: transparent;
+    border: 2px solid #00076b;
+    border-radius: 40px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.6rem 0.8rem;
+}
+
+.search::placeholder {
+    color: #fff;
+}
+
+.search:focus {
+    color: #fff;
+    background-color: #00076b;
+    outline: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#theme-title {
+    background-color: #20dbdbad;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.movie {
+    background-color: #036d97;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+    width: 300px;
+}
+
+.movie img {
+    width: 300px;
+    height: 400px;
+}
+
+.movie-info {
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25rem 1rem 1rem;
+    letter-spacing: 0.4px;
+}
+
+.movie-info span {
+    background-color: #00076b;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+}
+.movie-info span.green {
+    color: #3af00d;
+}
+
+.movie-info span.orange {
+    color: #f15d08;
+}
+
+.movie-info span.red {
+    color: #f00d0d;
+}
+
+.movie-year {
+    color: #000;
+    margin: 1rem;
+    display: inline-block;
+    font-weight: bold;
+    
+}
+
+.overview {
+    background-color: #036d97;
+    color: #000;
+    padding: 1rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(105%);
+    transition: transform 0.4s ease-in;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
+
+/* Movie Details */
+
+.movie-details {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.movie-details img {
+    border: 2px;
+    border-radius: 20px;
+    width: 500px;
+    height: 600px;
+}
+
+.movie-img {
+    margin: 1rem;
+    border: 1px solid #00076b;
+    border-radius: 20px;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.4);
+}
+
+.movie-details-info {
+    background-color: #20dbdb;
+    border: 2px solid #00076b;
+    border-radius: 20px;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.4);
+    display: block;
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 800px;
+    height: auto;
+}
+
+#movie-info-title {
+    font-size: 2rem;
+}
+
+.movie-info-release-date {
+    font-size: 0.5rem;
+}
+
+.movie-rating {
+    display: flex;
+    flex-direction: row;
+}
+
+.movie-details-info span {
+    font-size: 1rem;
+    margin-top: 1.35rem;
+    margin-left: 0.2rem;
+}
+
+.movie-details-info span.green {
+    color: #146300;
+}
+
+.movie-details-info span.orange {
+    color: #fa5c00;
+}
+
+.movie-details-info span.red {
+    color: #d10000;
+}
+
+.commentary-section {
+    background-color: #20dbdb;
+    padding: 1rem;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 10px 0px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+.commentary-form {
+    width: 450px;
+    padding: 1rem;
+}
+
+#commentary-form {
+    border: 2px solid #00076b;
+    border-radius: 40px;
+    padding: 1rem;
+}
+
+form div + div {
+    margin-top: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 110px;
+    text-align: right;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5rem;
+    resize: vertical;
+}
+
+#commentary-button {
+    padding-left: 98px;
+    margin-left: 1rem;
+}
+
+.commentary-list {
+    border: 2px solid #00076b;
+    border-radius: 40px;
+    display: block;
+    padding: 1rem;
+    width: auto;
+    max-width: 600px;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ------------- */
+
+.footer-bottom {
+    font-size: 1rem;
+    flex-direction: row;
+    justify-content: left;
+    background-color: #11c7c781;
+    padding: 0.1rem;
+}
+
+.footer-bottom img {
+    width: 50px;
+    height: 50px;
+}
